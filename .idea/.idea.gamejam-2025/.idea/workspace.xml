@@ -5,8 +5,188 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca553b81-c2be-4015-89a3-f8480fd10c9e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/New Web Profile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/New Web Profile.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Input.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Input/Controls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Input/Controls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Input/Controls.inputactions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Input/Controls.inputactions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/M_Suit_Basic.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/M_Suit_Basic.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/M_Suit_Glass.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/M_Suit_Glass.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1 3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1 3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Materials/TestMat1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Models/Suit.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Models/Suit.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Scripts/CameraRotation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Scripts/CameraRotation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Scripts/ExosuitFeatures.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Scripts/ExosuitFeatures.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Scripts/MainCharacterMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Scripts/MainCharacterMovement.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/source/Koosh Bush betetr.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/source/Koosh Bush betetr.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_Koosh_bush_small_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_Koosh_bush_small_normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_huge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_huge.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_huge_illum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_huge_illum.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_huge_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_huge_normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_large.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_large_illum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_large_illum.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_large_normals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_large_normals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_medium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_medium.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_medium_illum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_medium_illum.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_medium_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_medium_normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_small.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_small_illum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_small_illum.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_small_spec.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/bulb-bush/textures/Coral_reef_koosh_bush_small_spec.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.3ds" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.3ds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.c4d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.c4d.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/FanCoral_Cluster_Med.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Orange_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Orange_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Orange_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Orange_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Orange_SS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Orange_SS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Violet_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Violet_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Violet_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Violet_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Violet_SS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Violet_SS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_White_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_White_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_White_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_White_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_White_SS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_White_SS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Yellow_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Yellow_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Yellow_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Yellow_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Yellow_SS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoralSkin_Yellow_SS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoral_Cluster_Med_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoral_Cluster_Med_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoral_Cluster_Med_SS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/source/Fan Coral Med/tex/FanCoral_Cluster_Med_SS.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Orange_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Orange_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Orange_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Orange_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Violet_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Violet_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Violet_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Violet_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_White_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_White_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_White_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_White_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Yellow_Color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Yellow_Color.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Yellow_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/fan-coral-med/textures/FanCoralSkin_Yellow_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/source/coral_pack.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/source/coral_pack.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_1_cavity_2048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_1_cavity_2048.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_1_diffuse_2048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_1_diffuse_2048.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_1_normal_2048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_1_normal_2048.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_2_cavity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_2_cavity.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_2_diffuse2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_2_diffuse2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_2_normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_2_normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_3_bake_diffuse_2048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_3_bake_diffuse_2048.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_3_bake_normal_2048.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_3_bake_normal_2048.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_4_diffuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_4_diffuse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_4_inner_diffuse.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_4_inner_diffuse.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_4_inner_normal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/coral_4_inner_normal.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/internal_ground_ao_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/lowpoly-coral-pack/textures/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/source/model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/source/model/model.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/source/model/model.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/source/model/model.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/source/model/model.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/textures/internal_ground_ao_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/textures/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/textures/model.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_game/Test Models/underwater-terrain-agisoftnaturechallenge/textures/model.jpeg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gamejam-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamejam-2025/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Input/InputSystem_Actions.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Input/InputSystem_Actions.inputactions.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene  things.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene  things.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene  things/bubble.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene  things/bubble.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene  things/bubble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene  things/bubble.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/New Custom Universal Renderer Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/New Custom Universal Renderer Data.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_game/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_game/Scripts/MainMenu/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Scripts/MainMenu/MainMenuUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +198,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_game/Scripts/Systems/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_game/Scripts/Systems/SystemUse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@001b54a8988a/Editor/ViewSwitcher.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -32,7 +214,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "Merging dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,6 +277,7 @@
       <updated>1737781836925</updated>
       <workItem from="1737781840091" duration="29000" />
       <workItem from="1737782664349" duration="598000" />
+      <workItem from="1737846032386" duration="2032000" />
     </task>
     <servers />
   </component>
