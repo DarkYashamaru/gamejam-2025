@@ -44,6 +44,24 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""LightTrigger"",
+                    ""type"": ""Button"",
+                    ""id"": ""e1818a55-cd55-4edd-a3c9-b2255d13c249"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Turbo"",
+                    ""type"": ""Button"",
+                    ""id"": ""abb89ee1-c457-4188-831b-a6a95583f770"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -123,6 +141,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""WatchBack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""197f02d5-a362-47d8-b159-f89bfc829c09"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LightTrigger"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""10cf4c97-ebbd-4701-b1a2-d342acd08de8"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Turbo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -133,6 +173,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Base = asset.FindActionMap("Base", throwIfNotFound: true);
         m_Base_Move = m_Base.FindAction("Move", throwIfNotFound: true);
         m_Base_WatchBack = m_Base.FindAction("WatchBack", throwIfNotFound: true);
+        m_Base_LightTrigger = m_Base.FindAction("LightTrigger", throwIfNotFound: true);
+        m_Base_Turbo = m_Base.FindAction("Turbo", throwIfNotFound: true);
     }
 
     ~@Controls()
@@ -201,12 +243,16 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private List<IBaseActions> m_BaseActionsCallbackInterfaces = new List<IBaseActions>();
     private readonly InputAction m_Base_Move;
     private readonly InputAction m_Base_WatchBack;
+    private readonly InputAction m_Base_LightTrigger;
+    private readonly InputAction m_Base_Turbo;
     public struct BaseActions
     {
         private @Controls m_Wrapper;
         public BaseActions(@Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Base_Move;
         public InputAction @WatchBack => m_Wrapper.m_Base_WatchBack;
+        public InputAction @LightTrigger => m_Wrapper.m_Base_LightTrigger;
+        public InputAction @Turbo => m_Wrapper.m_Base_Turbo;
         public InputActionMap Get() { return m_Wrapper.m_Base; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -222,6 +268,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @WatchBack.started += instance.OnWatchBack;
             @WatchBack.performed += instance.OnWatchBack;
             @WatchBack.canceled += instance.OnWatchBack;
+            @LightTrigger.started += instance.OnLightTrigger;
+            @LightTrigger.performed += instance.OnLightTrigger;
+            @LightTrigger.canceled += instance.OnLightTrigger;
+            @Turbo.started += instance.OnTurbo;
+            @Turbo.performed += instance.OnTurbo;
+            @Turbo.canceled += instance.OnTurbo;
         }
 
         private void UnregisterCallbacks(IBaseActions instance)
@@ -232,6 +284,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @WatchBack.started -= instance.OnWatchBack;
             @WatchBack.performed -= instance.OnWatchBack;
             @WatchBack.canceled -= instance.OnWatchBack;
+            @LightTrigger.started -= instance.OnLightTrigger;
+            @LightTrigger.performed -= instance.OnLightTrigger;
+            @LightTrigger.canceled -= instance.OnLightTrigger;
+            @Turbo.started -= instance.OnTurbo;
+            @Turbo.performed -= instance.OnTurbo;
+            @Turbo.canceled -= instance.OnTurbo;
         }
 
         public void RemoveCallbacks(IBaseActions instance)
@@ -253,5 +311,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnWatchBack(InputAction.CallbackContext context);
+        void OnLightTrigger(InputAction.CallbackContext context);
+        void OnTurbo(InputAction.CallbackContext context);
     }
 }

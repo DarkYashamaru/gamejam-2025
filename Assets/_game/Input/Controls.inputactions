@@ -22,6 +22,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "LightTrigger",
+                    "type": "Button",
+                    "id": "e1818a55-cd55-4edd-a3c9-b2255d13c249",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Turbo",
+                    "type": "Button",
+                    "id": "abb89ee1-c457-4188-831b-a6a95583f770",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -99,6 +117,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "WatchBack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "197f02d5-a362-47d8-b159-f89bfc829c09",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LightTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "10cf4c97-ebbd-4701-b1a2-d342acd08de8",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Turbo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
