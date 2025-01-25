@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenuUI : MonoBehaviour
 {
     public UIDocument uiDocument;
 
-    void Start()
+    IEnumerator Start()
     {
+        yield return null;
         SetUIEvents();
     }
 
@@ -26,7 +28,7 @@ public class MainMenuUI : MonoBehaviour
     {
         Debug.Log("On start game clicked");
         //TODO use a better way to load the scene
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
     private void OnOptionsButton ()
