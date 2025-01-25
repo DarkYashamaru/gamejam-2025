@@ -26,7 +26,7 @@ public class MainMenuUI : MonoBehaviour
     {
         Debug.Log("On start game clicked");
         //TODO use a better way to load the scene
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Game", LoadSceneMode.Single);
     }
 
     private void OnOptionsButton ()
