@@ -50,7 +50,6 @@ public class MainCharacterMovement : MonoBehaviour
         {
                 rb.AddRelativeForce(new Vector3(0 , rb.position.y, rb.position.z + Time.fixedDeltaTime * Xacceleration * direccion.y));
         }
-
         if (direccion.x != 0)
         {
             if (rb.linearVelocity.x == 0)
