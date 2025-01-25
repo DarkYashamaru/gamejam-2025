@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenuUI : MonoBehaviour
 {
     public UIDocument uiDocument;
 
-    void Start()
+    IEnumerator Start()
     {
+        yield return null;
         SetUIEvents();
     }
 
