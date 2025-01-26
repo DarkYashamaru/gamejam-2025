@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TurboSystem : SystemUse
+public class TurboSystem : SystemToggle
 {
     
 }

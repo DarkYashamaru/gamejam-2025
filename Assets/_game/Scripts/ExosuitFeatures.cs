@@ -62,7 +62,7 @@ public class ExosuitFeatures : MonoBehaviour
         if (ctx.performed && !turboActive)
         {
             StartCoroutine(TurboEnum());
-            TurboSystem.Use();
+            
         }
         
 
@@ -70,11 +70,13 @@ public class ExosuitFeatures : MonoBehaviour
     IEnumerator TurboEnum()
     {
         turboActive = true;
+        TurboSystem.IsActive = true;
         movRef.Xacceleration = movRef.Xacceleration+turboValue;
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(5);
         movRef.Xacceleration = movRef.Xacceleration - turboValue;
         turboActive = false;
+        TurboSystem.IsActive = false;
         //After we have waited 5 seconds print the time again.
         
     }
