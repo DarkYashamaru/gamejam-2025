@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    public int Maxheathvalue = 10000;
+    public float Maxheathvalue = 10000f;
     public float Currentheathvalue = 0;
     public event System.Action OnDeath;
     public event System.Action<float> OnHealthChanged;
     private void Start()
     {
         Currentheathvalue = Maxheathvalue;
+        OnHealthChanged?.Invoke(Currentheathvalue);
     }
 
     public void TakeDamage(float damage)
