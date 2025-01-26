@@ -9,17 +9,17 @@ public class ExosuitFeatures : MonoBehaviour
     public MainCharacterMovement movRef;
     public float turboValue;
     public bool turboActive;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public Lightsystem Light;
+    
+    
     private void Awake()
     {
         turboActive = false;
         turboValue = 1000f;
         movRef = this.gameObject.GetComponent<MainCharacterMovement>();
         controles = new();
+        //loadsystems
+        Light = FindAnyObjectByType<Lightsystem>();
 
     }
 
@@ -37,14 +37,20 @@ public class ExosuitFeatures : MonoBehaviour
         controles.Disable();
     }
 
-    // Update is called once per frame
     void TurnLight(InputAction.CallbackContext ctx)
     {
         if (ctx.performed)
         {
             if (bulb.enabled)
+            {
                 bulb.enabled = false;
-            else bulb.enabled = true;
+            }
+            else
+            {
+                bulb.enabled = true;
+            }
+            Light.IsActive = bulb.enabled;
+
             //Debug.Log("Click a la linterna");
         }
     }
