@@ -10,22 +10,26 @@ public class SonarLightAction : MonoBehaviour
 
     private void Awake()
     {
-        time = 5.0f;
-        luz = transform;
-        luz.transform.localPosition=head.transform.localPosition;
+        
         //luz.gameObject.SetActive(false);
     }
     private void Start()
     {
-        StartSonarMoving(); 
+        luz = transform;
+        luz.transform.localPosition = head.transform.localPosition;
+        luz.gameObject.SetActive(false);
     }
     public void StartSonarMoving()
     {
+        time = 5.0f;
+
+        luz.transform.localPosition = head.transform.localPosition;
         StartCoroutine(SonarLightCoroutine());
+        
     }
     IEnumerator SonarLightCoroutine()
     {
-        yield return new WaitForSeconds(5);
+        //yield return new WaitForSeconds(5);
         Vector3 startingPos = transform.position;
         Vector3 finalPos = transform.position - (transform.forward * 15);
         luz.gameObject.SetActive(true);

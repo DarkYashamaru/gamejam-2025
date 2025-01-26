@@ -10,10 +10,16 @@ public class ExosuitFeatures : MonoBehaviour
     public MainCharacterMovement movRef;
     public float turboValue;
     public bool turboActive;
+    public bool lightActive;
     public Lightsystem LightSystem;
     public TurboSystem TurboSystem;
     
-    
+
+    public Transform sonarLight;
+    public GameObject head;
+    public float sonarTime;
+
+
     private void Awake()
     {
         turboActive = false;
@@ -25,11 +31,16 @@ public class ExosuitFeatures : MonoBehaviour
         TurboSystem = FindAnyObjectByType<TurboSystem>();
 
     }
-
+    private void Start()
+    {
+        sonarLight.transform.localPosition = head.transform.localPosition;
+        sonarLight.gameObject.SetActive(false);
+    }
     private void OnEnable()
     {
         controles.Base.LightTrigger.performed += TurnLight;
         controles.Base.Turbo.performed += Turbo;
+        controles.Base.ActivateSonar.performed += SonarActivation;
         controles.Enable();
 
     }
@@ -37,7 +48,22 @@ public class ExosuitFeatures : MonoBehaviour
     {
         controles.Base.LightTrigger.performed -= TurnLight;
         controles.Base.Turbo.performed += Turbo;
+        controles.Base.ActivateSonar.performed += SonarActivation;
         controles.Disable();
+    }
+
+    void SonarActivation(InputAction.CallbackContext ctx)
+    {
+        sonarTime = 5.0f;
+        sonarLight.transform.localPosition = head.transform.localPosition;
+        
+        if (ctx.performed&&!lightActive)
+        {
+            lightActive = true;
+            sonarLight.gameObject.SetActive(true);
+            StartCoroutine(SonarLightCoroutine());
+        }
+        
     }
 
     void TurnLight(InputAction.CallbackContext ctx)
@@ -76,5 +102,24 @@ public class ExosuitFeatures : MonoBehaviour
         turboActive = false;
         TurboSystem.IsActive = false;
         //After we have waited 5 seconds print the time again.
+    }
+    IEnumerator SonarLightCoroutine()
+    {
+        //yield return new WaitForSeconds(5);
+        Vector3 startingPos = sonarLight.transform.localPosition;
+        Vector3 finalPos = sonarLight.transform.localPosition + (Vector3.up * 15);
+        sonarLight.gameObject.SetActive(true);
+        float elapsedTime = 0;
+
+        while (elapsedTime < sonarTime)
+        {
+            sonarLight.transform.localPosition = Vector3.Lerp(startingPos, finalPos, (elapsedTime / sonarTime));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+            
+        }
+        lightActive = false;
+        sonarLight.transform.localPosition = head.transform.localPosition;
+
     }
 }

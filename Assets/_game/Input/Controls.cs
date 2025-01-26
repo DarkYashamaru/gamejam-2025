@@ -62,6 +62,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ActivateSonar"",
+                    ""type"": ""Button"",
+                    ""id"": ""2e6bd8cf-288b-45c0-b6cd-d324f3e940e7"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -163,6 +172,17 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""Turbo"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9de288ed-c5c8-4486-b6c7-f31f6b4b52bd"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ActivateSonar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -175,6 +195,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Base_WatchBack = m_Base.FindAction("WatchBack", throwIfNotFound: true);
         m_Base_LightTrigger = m_Base.FindAction("LightTrigger", throwIfNotFound: true);
         m_Base_Turbo = m_Base.FindAction("Turbo", throwIfNotFound: true);
+        m_Base_ActivateSonar = m_Base.FindAction("ActivateSonar", throwIfNotFound: true);
     }
 
     ~@Controls()
@@ -245,6 +266,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Base_WatchBack;
     private readonly InputAction m_Base_LightTrigger;
     private readonly InputAction m_Base_Turbo;
+    private readonly InputAction m_Base_ActivateSonar;
     public struct BaseActions
     {
         private @Controls m_Wrapper;
@@ -253,6 +275,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @WatchBack => m_Wrapper.m_Base_WatchBack;
         public InputAction @LightTrigger => m_Wrapper.m_Base_LightTrigger;
         public InputAction @Turbo => m_Wrapper.m_Base_Turbo;
+        public InputAction @ActivateSonar => m_Wrapper.m_Base_ActivateSonar;
         public InputActionMap Get() { return m_Wrapper.m_Base; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -274,6 +297,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Turbo.started += instance.OnTurbo;
             @Turbo.performed += instance.OnTurbo;
             @Turbo.canceled += instance.OnTurbo;
+            @ActivateSonar.started += instance.OnActivateSonar;
+            @ActivateSonar.performed += instance.OnActivateSonar;
+            @ActivateSonar.canceled += instance.OnActivateSonar;
         }
 
         private void UnregisterCallbacks(IBaseActions instance)
@@ -290,6 +316,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @Turbo.started -= instance.OnTurbo;
             @Turbo.performed -= instance.OnTurbo;
             @Turbo.canceled -= instance.OnTurbo;
+            @ActivateSonar.started -= instance.OnActivateSonar;
+            @ActivateSonar.performed -= instance.OnActivateSonar;
+            @ActivateSonar.canceled -= instance.OnActivateSonar;
         }
 
         public void RemoveCallbacks(IBaseActions instance)
@@ -313,5 +342,6 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnWatchBack(InputAction.CallbackContext context);
         void OnLightTrigger(InputAction.CallbackContext context);
         void OnTurbo(InputAction.CallbackContext context);
+        void OnActivateSonar(InputAction.CallbackContext context);
     }
 }
