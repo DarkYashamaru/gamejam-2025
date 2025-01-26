@@ -46,7 +46,7 @@ public class MainCharacterMovement : MonoBehaviour
     {
         if (direccion.y != 0)
         {
-                rb.AddRelativeForce(new Vector3(0, rb.position.y, rb.position.z + Time.fixedDeltaTime * Xacceleration * direccion.y));
+                rb.AddRelativeForce(new Vector3(rb.position.x, rb.position.y, rb.position.z + Time.fixedDeltaTime * Xacceleration * direccion.y));
         }
         if (direccion.x != 0)
         {
