@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 274600642375337248}
   - component: {fileID: 1584560848497043745}
   - component: {fileID: 5608211813660141243}
-  - component: {fileID: 6764420876232157828}
   m_Layer: 29
   m_Name: SonarLight
   m_TagString: Untagged
@@ -122,21 +121,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &6764420876232157828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424974692918081168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aa5b085ff7cb4a4484049d44cc0d281, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  luz: {fileID: 0}
-  head: {fileID: 7226873273810730185}
-  time: 0
 --- !u!1 &484762253991433483
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +670,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 1
   m_Range: 0.83
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -983,8 +967,12 @@ MonoBehaviour:
   movRef: {fileID: 0}
   turboValue: 0
   turboActive: 0
+  lightActive: 0
   LightSystem: {fileID: 0}
   TurboSystem: {fileID: 0}
+  sonarLight: {fileID: 274600642375337248}
+  head: {fileID: 7226873273810730185}
+  sonarTime: 5
 --- !u!1 &5777319011338721144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1402,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Suit
       objectReference: {fileID: 0}
+    - target: {fileID: 1630794972795428178, guid: ca6640bd55f5b1b49922428b3a77a798, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    - target: {fileID: 1630794972795428178, guid: ca6640bd55f5b1b49922428b3a77a798, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 160154789899534285, guid: 0d2f41c7a91b11c7fbe95e8707b5e260, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
