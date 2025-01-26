@@ -39,6 +39,5 @@ public class SystemToggle : SystemBase
             _healthSystem.TakeDamage(cost);
             CurrentDelay = Delay;
         }
-
     }
 }

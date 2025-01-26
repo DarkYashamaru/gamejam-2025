@@ -62,11 +62,9 @@ public class ExosuitFeatures : MonoBehaviour
         if (ctx.performed && !turboActive)
         {
             StartCoroutine(TurboEnum());
-            
         }
-        
-
     }
+    
     IEnumerator TurboEnum()
     {
         turboActive = true;
@@ -78,7 +76,5 @@ public class ExosuitFeatures : MonoBehaviour
         turboActive = false;
         TurboSystem.IsActive = false;
         //After we have waited 5 seconds print the time again.
-        
     }
-
 }
