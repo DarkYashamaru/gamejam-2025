@@ -17,8 +17,8 @@ public class MainCharacterMovement : MonoBehaviour
         controles = new();
         rb = this.gameObject.GetComponent<Rigidbody>();
         mainCamera = Camera.main;
-        horizontalAcceleration = 300f;
-        verticalAcceleration = 300f;
+        //horizontalAcceleration = 300f;
+        //verticalAcceleration = 300f;
     }
     private void OnEnable()
     {
