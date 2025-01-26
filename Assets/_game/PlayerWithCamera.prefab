@@ -167,7 +167,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 10
   m_Range: 25
-  m_SpotAngle: 61.82222
+  m_SpotAngle: 151.32222
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -399,7 +399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8407266293021995349
 Transform:
   m_ObjectHideFlags: 0
@@ -892,8 +892,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.6790323, z: 0.5362982}
+  m_Center: {x: -0.0000013919192, y: 0.83821124, z: -0.011205232}
 --- !u!114 &7445453092338305149
 MonoBehaviour:
   m_ObjectHideFlags: 0
