@@ -41,6 +41,7 @@ public class SonarLightAction : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
         
     }
 
