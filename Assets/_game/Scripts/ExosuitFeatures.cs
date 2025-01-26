@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.Serialization;
 
 public class ExosuitFeatures : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class ExosuitFeatures : MonoBehaviour
     public MainCharacterMovement movRef;
     public float turboValue;
     public bool turboActive;
-    public Lightsystem Light;
+    public Lightsystem LightSystem;
+    public TurboSystem TurboSystem;
     
     
     private void Awake()
@@ -19,7 +21,8 @@ public class ExosuitFeatures : MonoBehaviour
         movRef = this.gameObject.GetComponent<MainCharacterMovement>();
         controles = new();
         //loadsystems
-        Light = FindAnyObjectByType<Lightsystem>();
+        LightSystem = FindAnyObjectByType<Lightsystem>();
+        TurboSystem = FindAnyObjectByType<TurboSystem>();
 
     }
 
@@ -49,7 +52,7 @@ public class ExosuitFeatures : MonoBehaviour
             {
                 bulb.enabled = true;
             }
-            Light.IsActive = bulb.enabled;
+            LightSystem.IsActive = bulb.enabled;
 
             //Debug.Log("Click a la linterna");
         }
@@ -59,7 +62,9 @@ public class ExosuitFeatures : MonoBehaviour
         if (ctx.performed && !turboActive)
         {
             StartCoroutine(TurboEnum());
+            TurboSystem.Use();
         }
+        
 
     }
     IEnumerator TurboEnum()
