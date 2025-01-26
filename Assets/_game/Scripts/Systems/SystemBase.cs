@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SystemBase : MonoBehaviour
 {
-    public int cost;
+    public float cost;
     protected HealthSystem _healthSystem;
     
     protected virtual void Awake()

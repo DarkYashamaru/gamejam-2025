@@ -4,15 +4,15 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     public int Maxheathvalue = 10000;
-    public int Currentheathvalue = 0;
+    public float Currentheathvalue = 0;
     public event System.Action OnDeath;
-    public event System.Action<int> OnHealthChanged;
+    public event System.Action<float> OnHealthChanged;
     private void Start()
     {
         Currentheathvalue = Maxheathvalue;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         Currentheathvalue -= damage;
 
