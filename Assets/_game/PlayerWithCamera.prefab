@@ -881,8 +881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  verticalAcceleration: 0
-  horizontalAcceleration: 0
+  verticalAcceleration: 300
+  horizontalAcceleration: 300
   mainCamera: {fileID: 0}
   direccion: {x: 0, y: 0}
 --- !u!54 &2515019466172023793
