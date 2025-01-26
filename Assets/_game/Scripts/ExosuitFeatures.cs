@@ -95,10 +95,10 @@ public class ExosuitFeatures : MonoBehaviour
     {
         turboActive = true;
         TurboSystem.IsActive = true;
-        movRef.Xacceleration = movRef.Xacceleration+turboValue;
+        movRef.verticalAcceleration = movRef.verticalAcceleration+turboValue;
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(5);
-        movRef.Xacceleration = movRef.Xacceleration - turboValue;
+        movRef.verticalAcceleration = movRef.verticalAcceleration - turboValue;
         turboActive = false;
         TurboSystem.IsActive = false;
         //After we have waited 5 seconds print the time again.

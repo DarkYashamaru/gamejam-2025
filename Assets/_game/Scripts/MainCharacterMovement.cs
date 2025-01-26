@@ -3,13 +3,11 @@ using UnityEngine.InputSystem;
 
 public class MainCharacterMovement : MonoBehaviour
 {
-    //public float Yacceleration; //Up and Down
     public Rigidbody rb;
-    public float Xacceleration; //Forward and backwards 
-    public float Zacceleration; //Left and Right
+    public float verticalAcceleration; //Forward and backwards 
+    public float horizontalAcceleration; //Left and Right
     InputAction moveAction;
-    public Camera camera;
-    public float cameraTurnSpeed;
+    public Camera mainCamera;
     private Controls controles;
     public Vector2 direccion;
     
@@ -18,11 +16,9 @@ public class MainCharacterMovement : MonoBehaviour
     {
         controles = new();
         rb = this.gameObject.GetComponent<Rigidbody>();
-        camera = Camera.main;
-        Zacceleration = 300f;
-        Xacceleration = 300f;
-        
-        
+        mainCamera = Camera.main;
+        horizontalAcceleration = 300f;
+        verticalAcceleration = 300f;
     }
     private void OnEnable()
     {
@@ -32,30 +28,17 @@ public class MainCharacterMovement : MonoBehaviour
     {
         controles.Disable();
     }
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        transform.forward = mainCamera.transform.forward;
         direccion = controles.Base.Move.ReadValue<Vector2>();
     }
+    
     private void FixedUpdate()
     {
-        if (direccion.y != 0)
-        {
-                rb.AddRelativeForce(new Vector3(rb.position.x, rb.position.y, rb.position.z + Time.fixedDeltaTime * Xacceleration * direccion.y));
-        }
-        if (direccion.x != 0)
-        {
-                rb.AddRelativeForce(new Vector3(rb.position.x + Time.fixedDeltaTime * Zacceleration * direccion.x, rb.position.y, rb.position.z));
-        }
-    }
-           
-    private void OnCollisionEnter(Collision collision)
-    {
-        //Debug.Log("choco con" + collision.gameObject.name);
+        rb.AddForce(transform.forward * (Time.fixedDeltaTime * verticalAcceleration * direccion.y) );
+        rb.AddForce(transform.right * (Time.fixedDeltaTime * horizontalAcceleration * direccion.x) );
     }
 }
