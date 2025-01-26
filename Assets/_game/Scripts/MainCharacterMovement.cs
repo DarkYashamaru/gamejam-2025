@@ -19,8 +19,8 @@ public class MainCharacterMovement : MonoBehaviour
         controles = new();
         rb = this.gameObject.GetComponent<Rigidbody>();
         camera = Camera.main;
-        Zacceleration = 50000f;
-        Xacceleration = 500f;
+        Zacceleration = 300f;
+        Xacceleration = 300f;
         
         
     }
@@ -40,20 +40,16 @@ public class MainCharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         direccion = controles.Base.Move.ReadValue<Vector2>();
-
     }
     private void FixedUpdate()
     {
         if (direccion.y != 0)
         {
-            
                 rb.AddRelativeForce(new Vector3(0, rb.position.y, rb.position.z + Time.fixedDeltaTime * Xacceleration * direccion.y));
         }
         if (direccion.x != 0)
         {
-            if (rb.linearVelocity.x == 0)
                 rb.AddRelativeForce(new Vector3(rb.position.x + Time.fixedDeltaTime * Zacceleration * direccion.x, rb.position.y, rb.position.z));
         }
     }

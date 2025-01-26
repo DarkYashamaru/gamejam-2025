@@ -6,6 +6,9 @@ public class ExosuitFeatures : MonoBehaviour
 {
     private Controls controles;
     public Light bulb;
+    public MainCharacterMovement movRef;
+    public float turboValue;
+    public bool turboActive;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,6 +16,9 @@ public class ExosuitFeatures : MonoBehaviour
     }
     private void Awake()
     {
+        turboActive = false;
+        turboValue = 1000f;
+        movRef = this.gameObject.GetComponent<MainCharacterMovement>();
         controles = new();
 
     }
@@ -39,27 +45,27 @@ public class ExosuitFeatures : MonoBehaviour
             if (bulb.enabled)
                 bulb.enabled = false;
             else bulb.enabled = true;
-            Debug.Log("Click a la linterna");
+            //Debug.Log("Click a la linterna");
         }
     }
     void Turbo(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.performed && !turboActive)
         {
-            //StartCoroutine(ExampleCoroutine())
+            StartCoroutine(TurboEnum());
         }
 
     }
-    IEnumerator ExampleCoroutine()
+    IEnumerator TurboEnum()
     {
-        //Print the time of when the function is first called.
-        Debug.Log("Started Coroutine at timestamp : " + Time.time);
-
+        turboActive = true;
+        movRef.Xacceleration = movRef.Xacceleration+turboValue;
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(5);
-
+        movRef.Xacceleration = movRef.Xacceleration - turboValue;
+        turboActive = false;
         //After we have waited 5 seconds print the time again.
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+        
     }
 
 }
