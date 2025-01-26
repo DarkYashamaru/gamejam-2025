@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8cdd7997c0142638de643aa241e644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 100
 --- !u!1 &2942511056697688728
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,8 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4540396adbb49528f9e81ecfddf9df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 2
   Delay: 1
+  IsActive: 0
 --- !u!1 &3627400294258579293
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3694004598785592596}
-  - component: {fileID: 3554462271244213788}
+  - component: {fileID: 4882711874669562868}
   m_Layer: 0
   m_Name: Turbine
   m_TagString: Untagged
@@ -159,7 +160,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2102412052749336135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3554462271244213788
+--- !u!114 &4882711874669562868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,7 +169,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4458036945559277850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8cdd7997c0142638de643aa241e644, type: 3}
+  m_Script: {fileID: 11500000, guid: be6ccda86930543b0bbf994579e1c178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 0
@@ -227,7 +228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4017000881250151474}
-  - component: {fileID: 6533836349781360861}
+  - component: {fileID: 4414646086950841154}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -250,7 +251,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2102412052749336135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6533836349781360861
+--- !u!114 &4414646086950841154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,8 +260,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 9018695989925641279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4540396adbb49528f9e81ecfddf9df, type: 3}
+  m_Script: {fileID: 11500000, guid: 0cb85550d06c1485e80fe9c266d7425a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
-  Delay: 1
+  cost: 0.2
+  Delay: 0.1
+  IsActive: 1
