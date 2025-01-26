@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Console
+    second: {fileID: 2100000, guid: fefcf0c4a7c1b66479e1262663cf216c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Glass
     second: {fileID: 2100000, guid: fefcf0c4a7c1b66479e1262663cf216c, type: 2}
   - first:
@@ -29,6 +34,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Plastic
     second: {fileID: 2100000, guid: 83c20ea87104ca8409769abe6a62340c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sonar
+    second: {fileID: 2100000, guid: e5d149c643c728d4c8229e5540b1acec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SonarGlass
+    second: {fileID: 2100000, guid: fefcf0c4a7c1b66479e1262663cf216c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
