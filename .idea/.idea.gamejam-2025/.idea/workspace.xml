@@ -7,9 +7,9 @@
     <list default="true" id="ca553b81-c2be-4015-89a3-f8480fd10c9e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gamejam-2025/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gamejam-2025/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_game/Scripts/ExosuitFeatures.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Scripts/ExosuitFeatures.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_game/Scripts/Systems/HealthSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Scripts/Systems/HealthSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_game/Scripts/Systems/SystemToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Scripts/Systems/SystemToggle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_game/Scripts/Systems/TurboSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_game/Scripts/Systems/TurboSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/shader.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/shader.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/shader/Sphere (1) Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/shader/Sphere (1) Profile.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <workItem from="1737781840091" duration="29000" />
       <workItem from="1737782664349" duration="598000" />
       <workItem from="1737846032386" duration="2032000" />
-      <workItem from="1737849350544" duration="8226000" />
+      <workItem from="1737849350544" duration="10349000" />
     </task>
     <servers />
   </component>
