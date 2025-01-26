@@ -34,8 +34,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - SonarLight
+  - SonarBackground
   - SonarMainCharacter
   m_SortingLayers:
   - name: Default
