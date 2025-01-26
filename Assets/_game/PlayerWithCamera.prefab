@@ -792,7 +792,6 @@ GameObject:
   - component: {fileID: 2519550938535563695}
   - component: {fileID: 7445453092338305149}
   - component: {fileID: 2515019466172023793}
-  - component: {fileID: 1628974355921810383}
   - component: {fileID: 2520075434332575406}
   m_Layer: 0
   m_Name: PrefabExoSuit
@@ -907,10 +906,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  Xacceleration: 0
-  Zacceleration: 0
-  camera: {fileID: 0}
-  cameraTurnSpeed: 0
+  verticalAcceleration: 0
+  horizontalAcceleration: 0
+  mainCamera: {fileID: 0}
   direccion: {x: 0, y: 0}
 --- !u!54 &2515019466172023793
 Rigidbody:
@@ -939,18 +937,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1628974355921810383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4864644649024907359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6481e46ef51bfce479d70119feb299ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2520075434332575406
 MonoBehaviour:
   m_ObjectHideFlags: 0
