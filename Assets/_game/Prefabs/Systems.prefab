@@ -91,7 +91,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 2
   Delay: 1
-  IsActive: 0
 --- !u!1 &3627400294258579293
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6ccda86930543b0bbf994579e1c178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
+  cost: 10
+  Delay: 0.1
 --- !u!1 &7692927349562708811
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,4 +265,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 0.2
   Delay: 0.1
-  IsActive: 1

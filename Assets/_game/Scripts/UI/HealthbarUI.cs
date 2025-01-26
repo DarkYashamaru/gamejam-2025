@@ -15,6 +15,8 @@ public class HealthbarUI : MonoBehaviour
     public Color fullbarColor = Color.green;
     public Color halfbarColor = Color.yellow;
     public Color lowbarColor = Color.red;
+    public float yellowColorThreshold = 0.6f;
+    public float redColorThreshold = 0.3f;
 
     private void Awake()
     {
@@ -42,12 +44,12 @@ public class HealthbarUI : MonoBehaviour
         float a = image.color.a;
         image.color = fullbarColor;
         
-        if (value < 0.51f)
+        if (value < yellowColorThreshold + 0.1f)
         {
             image.color = halfbarColor;
         }
 
-        if (value < 0.26f)
+        if (value < redColorThreshold + 0.1f)
         {
             image.color = lowbarColor;
         }
