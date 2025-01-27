@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 public class ExosuitFeatures : MonoBehaviour
 {
     private Controls controles;
-    public Light bulb;
+    public Light[] lights;
     public MainCharacterMovement movRef;
     public float turboValue;
     public bool turboActive;
@@ -70,17 +70,18 @@ public class ExosuitFeatures : MonoBehaviour
     {
         if (ctx.performed)
         {
-            if (bulb.enabled)
+
+            if (LightSystem.IsActive)
             {
-                bulb.enabled = false;
+                LightSystem.IsActive = false;
             }
             else
-            {
-                bulb.enabled = true;
-            }
-            LightSystem.IsActive = bulb.enabled;
+                LightSystem.IsActive = true;
 
-            //Debug.Log("Click a la linterna");
+            for (int i = 0; i < lights.Length; i++)
+            {
+                lights[i].enabled = LightSystem.IsActive;
+            }
         }
     }
     void Turbo(InputAction.CallbackContext ctx)
